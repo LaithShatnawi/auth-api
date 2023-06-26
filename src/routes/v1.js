@@ -15,7 +15,8 @@ router.param('model', (req, res, next) => {
   if (dataModules[modelName]) {
     req.model = dataModules[modelName];
     next();
-  } else {
+  }
+   else {
     next('Invalid Model');
   }
 });
